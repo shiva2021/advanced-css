@@ -1,9 +1,9 @@
 body {
     font-family: "lato", sans-serif;
     font-weight: 400;
-    font-size: 1.6rem;
+    font-size: $default-font-size;
     line-height: 1.7;
-    color: $color-black;
+    color: $color-grey-dark;
     padding: 3rem;
     box-sizing: border-box;
 }
@@ -47,4 +47,20 @@ body {
         transform: skewY(2deg) skewX(15deg) scale(1.1);
         text-shadow: .5rem 1rem 2rem rgba($color-black, 0.2);
     }
+}
+
+.heading-tertiary{
+    font-size: $default-font-size;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.paragraph{
+    font-size: $default-font-size;
+    font-weight: 400;
+
+    &:not(:last-child){
+        margin-bottom: 3rem;
+    }
+
 }
