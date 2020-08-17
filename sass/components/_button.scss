@@ -31,6 +31,14 @@
         }
     }
 
+    &--green {
+        background-color: $color-primary;
+        color: $color-white;
+        &::after {
+            background-color: $color-primary;
+        }
+    }
+
     &::after {
         /* Add a child element of the btn */
         content: "";
@@ -38,7 +46,6 @@
         height: 100%; /* w.r.t to parent element i.e. the btn*/
         width: 100%; /* w.r.t to parent element i.e. the btn*/
         border-radius: 10rem;
-        background-color: $color-white;
         position: absolute;
         top: 0;
         left: 0;
